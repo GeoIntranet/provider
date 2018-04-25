@@ -4,7 +4,7 @@
 <div class="container" >
     <div class="row">
         <div class="col-lg-6">
-            <h2>Fournisseur</h2>
+            <h5>Fournisseur</h5>
             <div class="row">
                     <form action="{{route('provider.store')}}" method="post">
                         {{ csrf_field() }}
@@ -43,7 +43,7 @@
             </div>
         </div>
         <div class="col-lg-3">
-            <h2>Marques</h2>
+            <h5>Marques</h5>
                 <div class="row">
                     <form class="form-inline" action="{{route('marque.store')}}" method="post">
                         {{ csrf_field() }}
@@ -85,14 +85,14 @@
                 </div>
         </div>
         <div class="col-lg-3">
-            <h2>Categories</h2>
+            <h5>Categories</h5>
             <div class="row">
                 <form class="form-inline" action="{{route('categorie.store')}}" method="post">
                     {{ csrf_field() }}
 
                     <table class="table">
                         <tr>
-                            <td><input class="form-control" type="text" name="nom" placeholder=""></td>
+                            <td><input class="form-control" type="text" name="nom" placeholder="materiel"></td>
                             <td><input class="btn btn-primary" type="submit" value="add"></td>
                         </tr>
                     </table>
