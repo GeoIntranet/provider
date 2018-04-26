@@ -25,8 +25,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home')
+        return view('fournisseurs')
             ->with('fournisseurs',Fournisseur::all())
+            ;
+    }
+
+    public function action()
+    {
+        return view('home')
             ->with('marques',marques::all())
             ->with('categories',Categories::all())
             ;

@@ -14,7 +14,9 @@ class MarquesController extends Controller
      */
     public function index()
     {
-        //
+        return view('marques')
+            ->with('marques',marques::all())
+            ;
     }
 
     /**

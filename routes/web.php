@@ -18,6 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/action/rapide', 'HomeController@action')->name('action');
 Route::resource('marque', 'MarquesController');
 Route::resource('provider', 'FournisseurController');
 Route::resource('categorie', 'CategoriesController');
+
+
